@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>UIDBuy spreadsheet | Sneakers, maatadvies en QC-foto’s</title>
+  <meta name="description" content="Bekijk tien categorieën bij HipoBuyFind en gebruik deze UIDBuy spreadsheet-gids om productlinks, kledingmaten, QC-foto’s en verzendkosten te vergelijken.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="nl_NL">
+  <meta property="og:title" content="UIDBuy spreadsheet | Van productlink tot fotocheck">
+  <meta property="og:description" content="Een Nederlandstalige koopgids voor sneakers, kleding en accessoires, met praktische controles voor maat, variant en verzending.">
+  <meta property="og:image" content="https://cms-cdn.thesolesupplier.co.uk/2022/05/louis-vuitton-x-nike-air-force-1-1_w1160.jpg">
+  <meta name="theme-color" content="#25243e">
+  <!-- index.html
+    Bing, eerste pagina: qcradar.com (Weidian en 1688), uidbuysheet.com (streetwear),
+    uidbuy.net (bronlinks en QC), uidbuyspreadsheet.org (categorieën en selecties),
+    uidbuy.store (varianten), spreadsheetuidbuy.com (inspectiefoto’s),
+    w2cspreadsheet.com (agentkosten), uidbuy.lat (gewicht en aantallen),
+    maisonlooks.com (categoriecatalogus), uidbuy.sbs (controlelogboek).
+  -->
+  <style>
+    :root{color-scheme:light;--ink:#25243e;--paper:#f8f6ff;--line:#d6d0e9;--muted:#514e66;--lime:#e5fa9e}
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--paper);color:var(--ink);font:1rem/1.65 system-ui,sans-serif}
+    a{color:inherit}
+    a:focus-visible,summary:focus-visible{outline:3px solid #7451cb;outline-offset:4px}
+    img{display:block;width:100%;height:auto;background:#e9e5f3}
+    .wrap{width:min(1120px,calc(100% - 2rem));margin-inline:auto}
+    header{background:var(--ink);color:white}
+    header .wrap,footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.6rem 1rem;padding-block:1rem}
+    header a{font-weight:800;text-decoration:none}
+    header span{font-size:.875rem}
+    .hero{display:grid;grid-template-columns:1fr .85fr;gap:clamp(1rem,4vw,3rem);align-items:center;padding-block:clamp(1.5rem,4vw,3.25rem)}
+    h1,h2,h3,p,figure{margin:0}
+    h1{font-size:clamp(2.6rem,7vw,5.25rem);line-height:.98;letter-spacing:-.065em;margin-bottom:1rem}
+    h2{font-size:clamp(1.55rem,3vw,2.3rem);line-height:1.15;letter-spacing:-.035em;margin-bottom:1rem}
+    h3{line-height:1.25;margin-bottom:.55rem}
+    p+p{margin-top:.75rem}
+    .hero p{max-width:52ch}
+    .button{display:inline-block;margin-top:1rem;padding:.6rem .95rem;border:1px solid var(--ink);background:var(--lime);font-weight:750;text-decoration:none}
+    .button:hover{background:#d4ed7a}
+    .hero img{aspect-ratio:5/3;object-fit:cover}
+    figcaption{padding:.45rem .7rem;font-size:.84rem;color:var(--muted)}
+    figure,article,.faq,.categories{border:1px solid var(--line);background:white}
+    .categories,.faq{padding:clamp(1rem,3vw,1.7rem)}
+    .categories ul,.looks{list-style:none;padding:0;margin:0;display:grid;gap:.6rem}
+    .categories ul{grid-template-columns:repeat(5,minmax(0,1fr))}
+    .categories a{display:flex;align-items:center;min-height:3rem;padding:.4rem .7rem;background:var(--paper);text-decoration:none;font-weight:650}
+    .categories a:hover{background:var(--lime);text-decoration:underline}
+    .section{margin-block:2rem}
+    .looks,.guides{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem}
+    .looks img{aspect-ratio:5/4;object-fit:contain}
+    article{padding:1.15rem;border-top:4px solid #8b72c6}
+    details{border-top:1px solid var(--line);padding:.7rem 0}
+    details p{margin-top:.45rem}
+    summary{cursor:pointer;font-weight:750}
+    footer{border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
+    @media(max-width:760px){.hero,.guides{grid-template-columns:1fr}.categories ul{grid-template-columns:repeat(3,minmax(0,1fr))}}
+    @media(max-width:480px){.categories ul,.looks{grid-template-columns:repeat(2,minmax(0,1fr))}}
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"WebPage",
+        "name":"UIDBuy spreadsheet",
+        "inLanguage":"nl",
+        "description":"Een Nederlandstalige koopgids over productlinks, maten, QC-foto’s en verzendkosten, met tien categorieën bij HipoBuyFind."
+      },
+      {
+        "@type":"FAQPage",
+        "inLanguage":"nl",
+        "mainEntity":[
+          {
+            "@type":"Question",
+            "name":"Wat is een UIDBuy spreadsheet?",
+            "acceptedAnswer":{"@type":"Answer","text":"Een UIDBuy spreadsheet is een overzicht van productlinks en gegevens waarmee je artikelen kunt vergelijken, zoals verkoper, kleur, maat en controledatum."}
+          },
+          {
+            "@type":"Question",
+            "name":"Hoe controleer ik of een productlink nog klopt?",
+            "acceptedAnswer":{"@type":"Answer","text":"Open de oorspronkelijke aanbieding en vergelijk de verkoper, het modelnummer, de foto’s en de gekozen maat en kleur met je notities."}
+          },
+          {
+            "@type":"Question",
+            "name":"Wat kan ik zien op QC-foto’s?",
+            "acceptedAnswer":{"@type":"Answer","text":"Met foto’s van jouw artikel kun je zichtbare details vergelijken, zoals stiksels, labels, kleur en eventuele beschadigingen. Voor maatcontrole helpt een foto met meetlint."}
+          },
+          {
+            "@type":"Question",
+            "name":"Waar gaan de categorielinks naartoe?",
+            "acceptedAnswer":{"@type":"Answer","text":"De categorielinks openen de bijbehorende rubrieken van HipoBuyFind."}
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+<link rel="canonical" href="https://kakobuyfinds.github.io/chfmf/">
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <a href="https://www.hipobuyfind.com">www.hipobuyfind.com</a>
+      <span>Nederlandstalige koopgids</span>
+    </div>
+  </header>
+  <main class="wrap">
+    <section class="hero" aria-labelledby="page-title">
+      <div>
+        <h1 id="page-title">UIDBuy spreadsheet</h1>
+        <p>Begin bij een categorie, kies een model en leg de exacte maat en kleur vast. Met deze gids controleer je productlinks, vergelijk je pasvormen en weet je welke foto’s je kunt opvragen voordat je een pakket laat versturen.</p>
+        <a class="button" href="https://www.hipobuyfind.com">Open HipoBuyFind</a>
+      </div>
+      <figure>
+        <img src="https://cms-cdn.thesolesupplier.co.uk/2022/05/louis-vuitton-x-nike-air-force-1-1_w1160.jpg" width="1160" height="696" fetchpriority="high" alt="Witte Louis Vuitton × Nike Air Force 1 Low-sneakers met reliëfmonogram">
+        <figcaption>Stijlvoorbeeld · Louis Vuitton × Nike Air Force 1 Low</figcaption>
+      </figure>
+    </section>
+    <nav class="categories" aria-labelledby="category-title">
+      <h2 id="category-title">Kies een categorie</h2>
+      <ul>
+        <li><a href="https://hipobuyfind.com/category-911-Shoes.html">Schoenen</a></li>
+        <li><a href="https://hipobuyfind.com/category-912-Hoodies%2FSweaters.html">Hoodies en truien</a></li>
+        <li><a href="https://hipobuyfind.com/category-913-T-Shirts.html">T-shirts</a></li>
+        <li><a href="https://hipobuyfind.com/category-914-Jackets.html">Jassen</a></li>
+        <li><a href="https://hipobuyfind.com/category-915-Pants%2FShorts.html">Broeken en shorts</a></li>
+        <li><a href="https://hipobuyfind.com/category-916-Headwear.html">Hoofddeksels</a></li>
+        <li><a href="https://hipobuyfind.com/category-917-Sets.html">Sets</a></li>
+        <li><a href="https://hipobuyfind.com/category-918-underwear%2Funderpants.html">Ondergoed</a></li>
+        <li><a href="https://hipobuyfind.com/category-919-Jersey.html">Sportshirts</a></li>
+        <li><a href="https://hipobuyfind.com/category-920-Accessories.html">Accessoires</a></li>
+      </ul>
+    </nav>
+    <section class="section" aria-labelledby="guide-title">
+      <h2 id="guide-title">Van zoekresultaat tot pakket</h2>
+      <div class="guides">
+        <article>
+          <h3>UIDBuy-productlinks controleren</h3>
+          <p>Noteer de oorspronkelijke productlink, de verkopersnaam en de datum waarop je de aanbieding opende. Controleer bij een Weidian-productlink, een Taobao-aanbieding of een 1688-vermelding het modelnummer, de kleurvariant, de maatoptie en de prijs van de gekozen variant. Gebruik een Yupoo-album als beeldreferentie en koppel de foto’s aan de juiste aanbieding.</p>
+        </article>
+        <article>
+          <h3>Sneakermaten en kledingmaten vergelijken</h3>
+          <p>Meet voor een sneaker je voetlengte en vergelijk die met de maattabel van het model. Als de verkoper een binnenzoollengte vermeldt, kijk dan welk meetpunt bedoeld is. Leg een goed passend T-shirt plat en meet borstbreedte, schouderbreedte en ruglengte. Controleer bij jassen ook de mouwlengte en bij broeken de taillebreedte en binnenbeenlengte.</p>
+        </article>
+        <article>
+          <h3>QC-foto’s en verzendkosten beoordelen</h3>
+          <p>Vraag om foto’s van het maatlabel, de naden en de zool of sluiting. Controleer of de productvariant en het aantal overeenkomen met je bestelling. Vergelijk voor Nederland of België de beschikbare routes en kijk welk gewicht de vervoerder gebruikt. Neem werkelijk gewicht, volumegewicht, eventuele servicekosten en de omgerekende totaalprijs in euro mee in je vergelijking.</p>
+        </article>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="style-title">
+      <h2 id="style-title">Details om op te letten</h2>
+      <ul class="looks">
+        <li><figure>
+          <img src="https://www.lenoirboutique.com/31700-large_default/gucci-gg-canvas-baseball-cap.jpg" width="500" height="400" loading="lazy" decoding="async" alt="Beige Gucci-baseballpet met GG-motief">
+          <figcaption>Gucci-pet · Meet de hoofdomtrek en bekijk de verstelbare sluiting.</figcaption>
+        </figure></li>
+        <li><figure>
+          <img src="https://assets.christiandior.com/is/image/diorprod/683J606A0677C080_E01-3?wid=540" width="500" height="400" loading="lazy" decoding="async" alt="Wit Dior-T-shirt van katoenen jersey">
+          <figcaption>Dior-T-shirt · Vergelijk de halsboord en de lengte van het shirt.</figcaption>
+        </figure></li>
+        <li><figure>
+          <img src="https://a.1stdibscdn.com/hermes-clic-clac-h-orange-enamel-gold-plated-wide-bracelet-pm-for-sale/1121189/v_110677821607930666086/11067782_master.jpg?auto=webp&amp;disable=upscale&amp;quality=60&amp;width=540" width="500" height="400" loading="lazy" decoding="async" alt="Oranje Hermès Clic Clac H-armband met goudkleurige sluiting">
+          <figcaption>Hermès-armband · Controleer de binnenmaat en vraag een close-up van de sluiting.</figcaption>
+        </figure></li>
+      </ul>
+    </section>
+    <section class="section faq" aria-labelledby="faq-title">
+      <h2 id="faq-title">Veelgestelde vragen</h2>
+      <details open>
+        <summary>Wat is een UIDBuy spreadsheet?</summary>
+        <p>Een UIDBuy spreadsheet is een overzicht van productlinks en gegevens waarmee je artikelen kunt vergelijken, zoals verkoper, kleur, maat en controledatum.</p>
+      </details>
+      <details>
+        <summary>Hoe controleer ik of een productlink nog klopt?</summary>
+        <p>Open de oorspronkelijke aanbieding en vergelijk de verkoper, het modelnummer, de foto’s en de gekozen maat en kleur met je notities.</p>
+      </details>
+      <details>
+        <summary>Wat kan ik zien op QC-foto’s?</summary>
+        <p>Met foto’s van jouw artikel kun je zichtbare details vergelijken, zoals stiksels, labels, kleur en eventuele beschadigingen. Voor maatcontrole helpt een foto met meetlint.</p>
+      </details>
+      <details>
+        <summary>Waar gaan de categorielinks naartoe?</summary>
+        <p>De categorielinks openen de bijbehorende rubrieken van HipoBuyFind.</p>
+      </details>
+    </section>
+  </main>
+  <footer>
+    <div class="wrap">
+      <p>Onafhankelijke gids. De merkfoto’s dienen als stijlvoorbeelden.</p>
+      <a href="https://www.hipobuyfind.com">HipoBuyFind</a>
+    </div>
+  </footer>
+</body>
+</html>
